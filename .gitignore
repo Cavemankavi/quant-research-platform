@@ -1,0 +1,76 @@
+# =========================
+# Terraform
+# =========================
+
+# Terraform working directory
+.terraform/
+
+# Terraform state
+*.tfstate
+*.tfstate.*
+
+# Terraform plan files
+*.tfplan
+
+# Terraform crash logs
+crash.log
+crash.*.log
+
+# Local Terraform variable values
+# Contains environment/user-specific values such as admin_cidr
+terraform.tfvars
+*.auto.tfvars
+*.auto.tfvars.json
+
+# NOTE:
+# .terraform.lock.hcl is intentionally NOT ignored.
+# It should be committed to pin provider versions.
+
+
+# =========================
+# Python
+# =========================
+
+# Virtual environments
+.venv/
+venv/
+
+# Python cache
+__pycache__/
+*.py[cod]
+
+# Test/cache directories
+.pytest_cache/
+
+
+# =========================
+# Local/generated data
+# =========================
+
+data/
+*.parquet
+
+
+# =========================
+# Secrets / credentials
+# =========================
+
+.env
+.env.*
+*.pem
+*.key
+
+
+# =========================
+# macOS
+# =========================
+
+.DS_Store
+
+
+# =========================
+# IDEs
+# =========================
+
+.vscode/
+.idea/
