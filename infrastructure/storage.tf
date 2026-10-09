@@ -1,5 +1,6 @@
 resource "aws_s3_bucket" "research_data" {
   bucket_prefix = "${local.name_prefix}-data-"
+  force_destroy = true
 
   tags = {
     Name = "${local.name_prefix}-research-data"
